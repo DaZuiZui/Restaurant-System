@@ -1,0 +1,20 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.144.213.195:3310/canteen?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: root
+  redis:
+    # Redis Url
+    host: 127.0.0.1
+    # Redis 端口
+    port: 6379
+    # 设置数据库序号
+    database: 0
+web:
+  upload-path: D:\private job\04232022\FoodRestaurant\src\main\resources\static\image
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
