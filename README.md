@@ -1,7 +1,7 @@
 # Readme
 
 ​ This project is a semi-finished product, but the functions have been realized. If you want to use this project, you may need your secondary development. The restaurant system implements user templates, recipe templates, comment templates, message templates, and administrator templates. This project can be used as a graduation project and can be re-developed.
-
+This project requires redis
 ​ Due to time reasons, I stopped maintaining this project, maybe there is time in the future, I will improve this project.
 
 # Home page
