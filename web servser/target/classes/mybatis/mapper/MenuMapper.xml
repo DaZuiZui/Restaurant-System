@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.xxx.foodrestaurant.mapper.MenuMapper">
+    <select id="selectdata" resultType="com.xxx.foodrestaurant.pojo.Menu" parameterType="com.xxx.foodrestaurant.pojo.Menu">
+        select *from menu where 1 = 1
+        <if test="flavor != null">
+            and flavor = #{flavor}
+        </if>
+
+        <if test="foodtimes != null">
+            and foodtimes = #{foodtimes}
+        </if>
+
+        <if test="menutype != null">
+            and menutype = #{menutype}
+        </if>
+    </select>
+</mapper>
